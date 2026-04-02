@@ -1,12 +1,21 @@
 import React from 'react';
 import { CiCircleCheck } from "react-icons/ci";
+import { toast } from 'react-toastify';
 
-const ProductCard = ({product}) => {
+const ProductCard = ({product,setCart,cart}) => {
 
     const tagStyles={
         "new":"bg-[#DBFCE7] text-[#0A883E] py-1 px-3 font-medium",
         "popular":"bg-[#E1E7FF] text-[#9514FA] py-1 px-3 font-medium",
         "best-seller":"bg-[#FEF3C6] text-[#BB4D00] py-1 px-3 font-medium"
+    }
+
+    const buynowBtn=()=>{
+        
+        toast.success("Wow so easy!");
+        const hold=[...cart,product]
+        setCart(hold);
+        
     }
 
     return (
@@ -22,12 +31,14 @@ const ProductCard = ({product}) => {
            <p className='font-bold text-xl'>{product.price}$<span className='text-[#627382] text-sm'>/Month</span></p>
            {
                 product.features.map((feature,index)=>{
-                    return <ul className='mb-4 mt-4' index={index}>
+                    return <ul className='mb-4 mt-4' key={index}>
                         <li className='flex items-center gap-2'><CiCircleCheck className='text-green-800' />{feature}</li>
                     </ul>
                 })
            }
-           <button className='bg-linear-to-r from-[#4F39F6] to-[#9514FA] w-full p-3 rounded-full text-white cursor-pointer'>Buy Now</button>
+           <button onClick={buynowBtn} className='bg-linear-to-r from-[#4F39F6] to-[#9514FA] w-full p-3 rounded-full text-white cursor-pointer'>Buy Now</button>
+
+           
         </div>
     );
 };

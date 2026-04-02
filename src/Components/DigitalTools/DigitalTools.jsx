@@ -2,7 +2,7 @@ import React, { use, useState } from 'react';
 import Products from '../Products/Products';
 import FullCart from '../FullCart/FullCart';
 
-const DigitalTools = ({productPromise,cart}) => {
+const DigitalTools = ({productPromise,cart,setCart}) => {
 
     // ekta use state lagbe
     const [activeBtn,setactiveBtn]=useState('product');
@@ -28,7 +28,7 @@ const DigitalTools = ({productPromise,cart}) => {
                 
             </div>
 
-             {activeBtn==='product' ? <Products products={products}></Products> : <FullCart></FullCart>}
+             {activeBtn==='product' ? <Products products={products} cart={cart} setCart={setCart}></Products> : <FullCart cart={cart}></FullCart>}
 
         </div>
 

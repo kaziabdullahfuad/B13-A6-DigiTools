@@ -4,6 +4,8 @@ import Banner from './Components/Banner/Banner'
 import DigitalTools from './Components/DigitalTools/DigitalTools'
 import Navbar from './Components/Navbar/Navbar'
 import UserShow from './Components/UserShow/UserShow'
+import { ToastContainer } from 'react-toastify'
+
 
 const fetchData=async()=>{
 
@@ -24,8 +26,12 @@ function App() {
      <Banner></Banner>
      <UserShow></UserShow>
       <Suspense fallback={<span className="loading loading-dots loading-xl"></span>}>
-          <DigitalTools productPromise={productPromise} cart={cart}></DigitalTools>
+          <DigitalTools productPromise={productPromise} cart={cart} setCart={setCart}></DigitalTools>
       </Suspense>
+     
+
+     {/* Toast */}
+      <ToastContainer />
      
     </>
   )
