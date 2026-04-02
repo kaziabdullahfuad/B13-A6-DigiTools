@@ -2,7 +2,7 @@ import React from 'react';
 import { CiShoppingCart } from "react-icons/ci";
 
 
-const Navbar = () => {
+const Navbar = ({cart}) => {
     return (
         <div className='bg-white border border-[#F2F2F2] shadow-md p-5'>
 
@@ -28,7 +28,7 @@ const Navbar = () => {
                     <p className='absolute -top-1 right-0 text-red-600 text-xl'>2</p>
                 </span> */}
                 <div className="indicator">
-            <span className="indicator-item badge badge-secondary">2</span>
+            <span className="indicator-item badge badge-secondary">{cart.length}</span>
                 <CiShoppingCart className='w-10 h-8' />
             </div>
                 

@@ -1,3 +1,4 @@
+import { useState } from 'react'
 import './App.css'
 import Banner from './Components/Banner/Banner'
 import DigitalTools from './Components/DigitalTools/DigitalTools'
@@ -6,10 +7,11 @@ import UserShow from './Components/UserShow/UserShow'
 
 function App() {
   
+  const [cart,setCart]=useState([]);
 
   return (
     <>
-     <Navbar></Navbar>
+     <Navbar cart={cart}></Navbar>
      <Banner></Banner>
      <UserShow></UserShow>
      <DigitalTools></DigitalTools>
