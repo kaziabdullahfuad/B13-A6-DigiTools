@@ -10,7 +10,7 @@ const UserShow = () => {
                     <h3 className='text-white font-bold text-6xl mb-3'>50K+</h3>
                     <p className='text-white  text-2xl'>Active Users</p>
                 </div>
-                <hr className='border-white'/>
+                <hr />
                 <div>
                     <h3 className='text-white font-bold text-6xl mb-3'>200+</h3>
                     <p className='text-white  text-2xl'>Premium Tools</p>
