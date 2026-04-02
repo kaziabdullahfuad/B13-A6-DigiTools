@@ -1,0 +1,20 @@
+import React from 'react';
+
+const DigitalTools = () => {
+
+    // ekta use state lagbe
+
+    return (
+        <div className=' w-10/12 md:mx-auto flex flex-col justify-center items-center gap-4 mt-30 mb-10'>
+            <h3 className='font-bold text-5xl text-[#101727]'>Premium Digital Tools</h3>
+            <p className='text-[#627382]'>Choose from our curated collection of premium digital products designed <br />to boost your productivity and creativity.</p>
+
+            <div className='flex bg-white border-[#F6F6F6] border rounded-full gap-2 justify-center items-center p-2 shadow-md'>
+                <button className='bg-linear-to-r from-[#4F39F6] to-[#9514FA] py-3 px-5 text-white rounded-full gap-1 font-medium'>Products</button>
+                <button className='py-3 px-5 text-[#25065D] font-medium'>Cart(2)</button>
+            </div>
+        </div>
+    );
+};
+
+export default DigitalTools;
