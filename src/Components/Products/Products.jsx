@@ -1,9 +1,16 @@
 import React from 'react';
+import ProductCard from '../UI/ProductCard/ProductCard';
 
-const Products = () => {
+const Products = ({products}) => {
     return (
-        <div className='mt-10 '>
-            <h1>Here are all the products mate</h1>
+        <div className='mt-10  w-10/12 mx-auto grid md:grid-cols-3 gap-7 rounded-2xl'>
+
+            {
+                products.map((product,index)=>{
+
+                    return <ProductCard product={product} index={index}></ProductCard>
+                })
+            }
         </div>
     );
 };

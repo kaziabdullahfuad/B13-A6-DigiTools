@@ -1,0 +1,98 @@
+[
+  {
+    "id": 1,
+    "name": "AI Writing Pro",
+    "description": "Generate high-quality content instantly with advanced AI writing tools.",
+    "price": 29,
+    "period": "monthly",
+    "tag": "Best Seller",
+    "tagType": "best-seller",
+    "features": [
+      "Unlimited AI generations",
+      "50+ writing templates",
+      "Grammar checker"
+    ],
+    "icon": "FaPenNib",
+    "img": "https://i.ibb.co.com/5WK2c09B/design-tool.png"
+  },
+  {
+    "id": 2,
+    "name": "Resume Builder AI",
+    "description": "Create professional resumes with ATS optimization and modern templates.",
+    "price": 19,
+    "period": "monthly",
+    "tag": "Popular",
+    "tagType": "popular",
+    "features": [
+      "100+ templates",
+      "ATS optimization",
+      "Export to PDF"
+    ],
+    "icon": "FaFileAlt",
+    "img": "https://i.ibb.co.com/Fb2xT6vW/operation.png"
+  },
+  {
+    "id": 3,
+    "name": "AI Image Generator",
+    "description": "Turn text into stunning visuals using AI-powered image generation.",
+    "price": 39,
+    "period": "monthly",
+    "tag": "New",
+    "tagType": "new",
+    "features": [
+      "Text-to-image generation",
+      "HD image export",
+      "Custom styles"
+    ],
+    "icon": "FaImage",
+    "img": "https://i.ibb.co.com/tPZrtwMz/portfolio.png"
+  },
+  {
+    "id": 4,
+    "name": "Social Media Scheduler",
+    "description": "Plan and automate your social media posts across platforms.",
+    "price": 15,
+    "period": "monthly",
+    "tag": "Popular",
+    "tagType": "popular",
+    "features": [
+      "Multi-platform posting",
+      "Post analytics",
+      "Auto scheduling"
+    ],
+    "icon": "FaCalendarAlt",
+    "img": "https://i.ibb.co.com/Fb2xT6vW/operation.png"
+  },
+  {
+    "id": 5,
+    "name": "AI Code Assistant",
+    "description": "Boost your coding productivity with AI-powered suggestions.",
+    "price": 49,
+    "period": "monthly",
+    "tag": "Best Seller",
+    "tagType": "best-seller",
+    "features": [
+      "Code auto-completion",
+      "Bug detection",
+      "Supports multiple languages"
+    ],
+    "icon": "FaCode",
+    "img": "https://i.ibb.co.com/504mJzZ/social-media.png"
+  },
+  {
+    "id": 6,
+    "name": "SEO Optimizer",
+    "description": "Improve your website ranking with AI-driven SEO insights.",
+    "price": 25,
+    "period": "monthly",
+    "tag": "New",
+    "tagType": "new",
+    "features": [
+      "Keyword suggestions",
+      "SEO score analysis",
+      "Competitor tracking"
+    ],
+    "icon": "FaChartLine",
+    "img": "https://i.ibb.co.com/DPcMXTW9/writing-2327400-1.png"
+  }
+]
