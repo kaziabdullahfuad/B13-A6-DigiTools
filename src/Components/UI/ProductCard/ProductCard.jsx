@@ -1,9 +1,10 @@
-import React from 'react';
+import React, { useState } from 'react';
 import { CiCircleCheck } from "react-icons/ci";
 import { toast } from 'react-toastify';
 
 const ProductCard = ({product,setCart,cart}) => {
 
+    const [isSelected,setisSelected]=useState(false);
     const tagStyles={
         "new":"bg-[#DBFCE7] text-[#0A883E] py-1 px-3 font-medium",
         "popular":"bg-[#E1E7FF] text-[#9514FA] py-1 px-3 font-medium",
@@ -12,11 +13,18 @@ const ProductCard = ({product,setCart,cart}) => {
 
     const buynowBtn=()=>{
         
-        toast.success("Wow so easy!");
+        if(cart.find(car=>car.name===product.name)){
+            toast.error(`${product.name} already added to cart`);
+            return;
+        }
+        toast.success(`${product.name} added to Cart`);
         const hold=[...cart,product]
         setCart(hold);
+        setisSelected(true);
         
     }
+
+    
 
     return (
 
@@ -36,7 +44,7 @@ const ProductCard = ({product,setCart,cart}) => {
                     </ul>
                 })
            }
-           <button onClick={buynowBtn} className='bg-linear-to-r from-[#4F39F6] to-[#9514FA] w-full p-3 rounded-full text-white cursor-pointer'>Buy Now</button>
+           <button onClick={buynowBtn} className='bg-linear-to-r from-[#4F39F6] to-[#9514FA] w-full p-3 rounded-full text-white cursor-pointer'>{isSelected ? 'Added to cart' : 'Buy Now'}</button>
 
            
         </div>

@@ -1,9 +1,11 @@
 import React from 'react';
+import CartProducts from '../UI/ProductCard/CartProducts';
+import EmptyCart from '../UI/ProductCard/EmptyCart';
 
-const FullCart = () => {
+const FullCart = ({cart}) => {
     return (
-        <div>
-            Inside the cart
+        <div className='mt-10'>
+            {cart.length ? <CartProducts></CartProducts> : <EmptyCart></EmptyCart>}
         </div>
     );
 };
