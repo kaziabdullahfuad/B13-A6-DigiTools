@@ -1,16 +1,18 @@
-# React + Vite
+## Name of the Project
+Digitools- Tools to Automate your life
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+## Description
+Various AI and aumation tools to make your workflow easier and get things done. Starting from AI writing pro to Resume Builder it has all the funcionalities that you need.
 
-Currently, two official plugins are available:
+## Technology that you use
+- Tailwind CSS, DaisyUI
+- React.js
+- JavaScript (ES6+)
+- React-Toastify (NPM Package)
+- JSON (for product data)
+- React Icons
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
-
-## React Compiler
-
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
-
-## Expanding the ESLint configuration
-
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+## 3 Features about your project
+- Allows users to add to cart different services
+- Has filtering system to not add the same product twice
+- React toastify alert for clean alerts
