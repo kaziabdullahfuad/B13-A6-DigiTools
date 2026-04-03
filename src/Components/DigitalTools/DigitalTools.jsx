@@ -7,8 +7,8 @@ const DigitalTools = ({productPromise,cart,setCart}) => {
     // ekta use state lagbe
     const [activeBtn,setactiveBtn]=useState('product');
     const products=use(productPromise);
-    console.log(products);
-    
+    // console.log(products);
+    const [cartPrice,setcartPrice]=useState(0);
 
     return (
 
@@ -28,7 +28,7 @@ const DigitalTools = ({productPromise,cart,setCart}) => {
                 
             </div>
 
-             {activeBtn==='product' ? <Products products={products} cart={cart} setCart={setCart}></Products> : <FullCart cart={cart}></FullCart>}
+             {activeBtn==='product' ? <Products products={products} cart={cart} setCart={setCart} cartPrice={cartPrice} setcartPrice={setcartPrice}></Products> : <FullCart cart={cart} setCart={setCart} cartPrice={cartPrice} setcartPrice={setcartPrice}></FullCart>}
 
         </div>
 

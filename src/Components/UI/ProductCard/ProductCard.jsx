@@ -2,7 +2,7 @@ import React, { useState } from 'react';
 import { CiCircleCheck } from "react-icons/ci";
 import { toast } from 'react-toastify';
 
-const ProductCard = ({product,setCart,cart}) => {
+const ProductCard = ({product,setCart,cart,cartPrice,setcartPrice}) => {
 
     const [isSelected,setisSelected]=useState(false);
     const tagStyles={
@@ -21,6 +21,8 @@ const ProductCard = ({product,setCart,cart}) => {
         const hold=[...cart,product]
         setCart(hold);
         setisSelected(true);
+        const addedPrice=cartPrice+product.price;
+        setcartPrice(addedPrice)
         
     }
 
