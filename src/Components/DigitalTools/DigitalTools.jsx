@@ -12,7 +12,7 @@ const DigitalTools = ({productPromise,cart,setCart}) => {
 
     return (
 
-        <div className=''>
+        <div className='p-10'>
             <div className=' w-10/12 mx-auto flex flex-col justify-center items-center gap-4 mt-30'>
                 <h3 className='font-bold text-5xl text-[#101727] text-center md:text-left'>Premium Digital Tools</h3>
                 <p className='text-[#627382] text-center md:text-left'>Choose from our curated collection of premium digital products designed <br />to boost your productivity and creativity.</p>

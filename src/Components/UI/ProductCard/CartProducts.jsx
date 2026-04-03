@@ -43,7 +43,7 @@ const CartProducts = ({cart,setCart,cartPrice,setcartPrice}) => {
                         </div>
 
                         <div>
-                           <button onClick={()=>removeBtn((prod))} className='text-[#FF3980] font-bold'>Remove</button>
+                           <button onClick={()=>removeBtn((prod))} className='text-[#FF3980] font-bold cursor-pointer'>Remove</button>
                         </div>
                     </div>
                 })
